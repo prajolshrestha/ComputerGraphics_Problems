@@ -1,0 +1,23 @@
+<body>
+    <svg width="400" height="400">
+        <defs>
+            <g id="shape">
+                <circle cy="-50" r="40"></circle>
+                <rect x="-40" width="80" height="100"></rect>
+            </g>
+        </defs>
+
+        <g stroke="black" stroke-width="5">
+            <g fill="red" transform="translate(80,150)">
+                <use xlink:href="#shape"></use>
+            </g>
+
+            <g fill="green" transform="matrix(0.7 0 0 0.7 200 150)">
+                <use xlink:href="#shape"></use>
+            </g>
+            <g fill="blue" transform="translate(320,150) rotate(20)">
+                <use xlink:href="#shape"></use>
+            </g>
+        </g>
+    </svg>
+</body>

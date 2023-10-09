@@ -1,0 +1,18 @@
+<body>
+    <canvas id="canvas" width="1000" height="1000"></canvas>
+    <script>
+        var context = canvas.getContext("2d");
+
+        context.resetTransform();
+
+        context.setTransform(1,0,0,1,0,0);
+        context.fillStyle='red';
+        context.fillRect(100,100,300,300);
+
+        //Affine Transformation done with the help of Homogenous coordinates
+        context.setTransform(1,0,1,.5,-250,100);
+        context.fillStyle='navy';
+        context.fillRect(100,100,300,300);
+
+    </script>
+</body>
